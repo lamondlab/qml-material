@@ -120,6 +120,10 @@ Controls.ApplicationWindow {
         id: overlayLayer
     }
 
+    Resizer {
+        id: __resizer
+    }
+
     width: dp(800)
     height: dp(600)
 
@@ -181,6 +185,7 @@ Controls.ApplicationWindow {
 
     Component.onCompleted: {
         if (clientSideDecorations)
-            flags |= Qt.FramelessWindowHint
+            flags |= Qt.FramelessWindowHint;
+        Storage.target=platformExtensions.window;
     }
 }

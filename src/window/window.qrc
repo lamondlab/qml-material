@@ -16,6 +16,9 @@
 	<file>TabbedPage.qml</file>
 	<file>Toolbar.qml</file>
 	<file>Window.qml</file>
+
+	<file>Resizer.qml</file>
+	<file>Storage.qml</file>
 </qresource>
 
 </RCC>

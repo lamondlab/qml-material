@@ -69,3 +69,5 @@ Sidebar 0.1 Sidebar.qml
 TabBar 0.1 TabBar.qml
 TabbedPage 0.2 TabbedPage.qml
 Toolbar 0.1 Toolbar.qml
+Resizer 0.1 Resizer.qml
+singleton Storage 0.1 Storage.qml
