@@ -34,13 +34,19 @@ Icon
 
     anchors.bottom: parent.bottom
     anchors.right : parent.right
+    anchors.rightMargin: -dp(8)
+    anchors.bottomMargin: -dp(8)
 
     colorize : true
     color : Theme.primaryColor
-    opacity : (Storage.target.visibility != Window.FullScreen) ? __resizer.opacity : 0
+    opacity : {
+        if(Storage.target===null) return 0;
+        if(Storage.target.visibility!==Window.FullScreen) return __resizer.opacity;
+        else return 0;
+    }
 
-    //name : "device/signal_cellular_0_bar"
-    name: "awesome/signal"
+    name: "awesome/caret_right"
+    rotation: 45
 
     MouseArea {
         anchors.fill: parent
